@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.company.manrega">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic__icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic__icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".buttons.Job"></activity>
+        <activity android:name=".buttons.Suchna" />
+        <activity android:name=".buttons.Register" />
+        <activity android:name=".buttons.Question" />
+        <activity android:name=".buttons.GoodGov" />
+        <activity android:name=".buttons.Panjiyan" />
+        <activity android:name=".buttons.Karya" />
+        <activity android:name=".buttons.Social" />
+        <activity android:name=".buttons.Jio" />
+        <activity android:name=".buttons.Met" />
+        <activity android:name=".buttons.BFT" />
+        <activity android:name=".buttons.GramPanchayat" />
+        <activity android:name=".buttons.Bhumika" />
+        <activity android:name=".buttons.AnuMay" />
+        <activity android:name=".buttons.Jagrukta" />
+        <activity android:name=".buttons.Nirdesh" />
+        <activity android:name=".buttons.Module" />
+        <activity android:name=".buttons.Disha_nirdesh" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

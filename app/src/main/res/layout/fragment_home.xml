@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F8F8F8"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="#F8F8F8"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:background="#F8F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <androidx.viewpager.widget.ViewPager
+        android:background="#F8F8F8"
+       android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/mViewPager"/>
+            <LinearLayout
+                android:background="#F8F8F8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/dishaNirdesh"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:id="@+id/question"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/dishanirdesh"
+                                />
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="दिशा निर्देश"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/txtmodule"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:id="@+id/awareness"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/witrit_module"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="विस्तृत माड्यूल"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/nirdesh"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:id="@+id/guidelines"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/nirdesh"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="निर्देश 16-17"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/jagrukta"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/jagrukta"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="जागरूकता"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/anumay"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/anumay_karya"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="अनुमेय कार्य"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/bhumika"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:src="@drawable/bhumika"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="भूमिका"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/panchyat"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gram_panchyat"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="ग्राम पंचायत"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/Bft"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                  android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bft"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="BFT मार्गदर्शिका"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/Meet"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                 android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/mat"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="मेट मार्गदर्शिका"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/jio"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/jio"
+                                />
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="जियो टैगिंग"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/social"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/social_audit"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="सोशल ऑडिट"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/squestion"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:src="@drawable/question" />
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="प्रश्न उत्तर"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/panjiyan"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/pajgiyan"
+                                />
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="पंजीयन-आवेदन"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/goodGova"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/good_governance"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="गुड गवर्नेंस"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/Work"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/karya_file"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="कार्य फाइल"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/Regis"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/register"
+                                />
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="7 रजिस्टर"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/such"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/suchna_patti"/>
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="सूचना पट्ट"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:elevation="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="8dp">
+                        <LinearLayout
+                            android:id="@+id/jobcard"
+                            android:background="@drawable/card_bg"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:src="@drawable/job_card" />
+                            <TextView
+                                android:textColor="#050A23"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="जॉब कार्ड"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
